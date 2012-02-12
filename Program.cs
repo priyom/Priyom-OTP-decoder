@@ -17,11 +17,11 @@ namespace PriyomOTPcoder
                 {
                     case "E":
                     case "e":
-                        Encryptionwithspace.EncodeIt(randomgen);
+                        MainCalls.Encode(randomgen);
                         break;
                     case "D":
                     case "d":
-                        Encryptionwithspace.DecodeIt();
+                        MainCalls.Decode();
                         break;
                     case "X":
                     case "x":
@@ -29,7 +29,7 @@ namespace PriyomOTPcoder
                         break;
                     case "G":
                     case "g":
-                        Encryption.GenKey(randomgen);
+                        MainCalls.GenKey(randomgen);
                         break;
                     default:
                         break;
