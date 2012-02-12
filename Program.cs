@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
-using System.Text.RegularExpressions;
+
 
 namespace PriyomOTPcoder
 {
@@ -20,7 +17,7 @@ namespace PriyomOTPcoder
                 {
                     case "E":
                     case "e":
-                        Encryption.Encode(randomgen);
+                        Encryption.EncodeIt(randomgen);
                         break;
                     case "D":
                     case "d":
@@ -35,7 +32,6 @@ namespace PriyomOTPcoder
                         Encryption.GenKey(randomgen);
                         break;
                     default:
-                        exitflag = false;
                         break;
                 }
             } while (exitflag == false);

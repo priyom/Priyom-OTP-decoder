@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace PriyomOTPcoder
 {
@@ -11,10 +10,9 @@ namespace PriyomOTPcoder
         private static readonly string Docsfolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         public static FileLine[] Readfile(string filename)
         {
-            var count = 0;
             var file = System.IO.File.ReadAllLines(Docsfolder + "\\" + filename + ".txt");
             var newlinesArray = new FileLine[file.Count()];
-            count = file.Count();
+            int count = file.Count();
             for (var i = 0; i < count; i++ )
             {
                 newlinesArray[i] = new FileLine(file[i]);
@@ -36,7 +34,7 @@ namespace PriyomOTPcoder
         {
             public FileLine(string fline)
             {
-                this.Fileline = fline;
+                Fileline = fline;
             }
             public string Fileline;
             public int Length()
@@ -57,7 +55,7 @@ namespace PriyomOTPcoder
             }
             IEnumerator IEnumerable.GetEnumerator()
             {
-                return (IEnumerator) GetEnumerator();
+                return GetEnumerator();
             }
             public FileLineEnum GetEnumerator()
             {

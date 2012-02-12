@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace PriyomOTPcoder
 {
@@ -9,8 +6,8 @@ namespace PriyomOTPcoder
     {
         public Random Random()
         {
-            this.Randomvar = new Random();
-            return this.Randomvar;
+            Randomvar = new Random();
+            return Randomvar;
         }
         public Random Randomvar;
     }

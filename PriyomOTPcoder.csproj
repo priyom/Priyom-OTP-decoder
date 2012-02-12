@@ -84,6 +84,7 @@
   <ItemGroup>
     <Compile Include="Encryption.cs" />
     <Compile Include="FileOperations.cs" />
+    <Compile Include="OTPcypher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -92,6 +93,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Random.cs" />
+    <Compile Include="stringstuff.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
