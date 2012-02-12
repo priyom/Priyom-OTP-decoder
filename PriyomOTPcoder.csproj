@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Encryption.cs" />
+    <Compile Include="Encryptionwithspace.cs" />
     <Compile Include="FileOperations.cs" />
     <Compile Include="OTPcypher.cs" />
     <Compile Include="Program.cs" />

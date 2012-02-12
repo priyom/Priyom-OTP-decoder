@@ -12,7 +12,7 @@ namespace PriyomOTPcoder
         {
             var file = System.IO.File.ReadAllLines(Docsfolder + "\\" + filename + ".txt");
             var newlinesArray = new FileLine[file.Count()];
-            int count = file.Count();
+            var count = file.Count();
             for (var i = 0; i < count; i++ )
             {
                 newlinesArray[i] = new FileLine(file[i]);

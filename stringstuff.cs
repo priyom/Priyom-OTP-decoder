@@ -26,9 +26,17 @@ namespace PriyomOTPcoder
         {
             return Regex.IsMatch(str, @"^[a-zA-Z]+$");
         }
+        public static bool IsValidWithSpace(String str)
+        {
+            return Regex.IsMatch(str, @"^[a-zA-Z ]+$");
+        }
         public static string GenerateRandomNumberCharacter(Random rollTheDice)
         {
             return Convert.ToString((char)rollTheDice.Next(97, 122));
+        }
+        public static string GenerateRandomNumberCharacterWithBacktick(Random rollTheDice)
+        {
+            return Convert.ToString(OTPcypher.Backtickcheck((char)rollTheDice.Next(96, 122)));
         }
     }
 }
