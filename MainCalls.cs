@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace PriyomOTPcoder
 {
@@ -15,7 +12,7 @@ namespace PriyomOTPcoder
             Console.WriteLine("Key length?(5000)");
             var length = Console.ReadLine();
             var keylength = 5000;
-            var keyText = "";
+            string keyText;
             if (length != "")
             {
                 keylength = Convert.ToInt16(length);
@@ -79,10 +76,9 @@ namespace PriyomOTPcoder
         }
         public static void Encode(Random randomgenerator)
         {
-            var rollTheDice = randomgenerator;
             Console.WriteLine("Read key from file? Leave blank for No, file name for yes:");
             var keyfilename = Console.ReadLine();
-            var key = "";
+            string key = null;
             Console.WriteLine("Encode with spaces?(y/n)");
             var spaces = Console.ReadLine();
             var spaceflag = false;
@@ -100,7 +96,7 @@ namespace PriyomOTPcoder
             }
             else
             {
-                key = Keygen.Key(message.Length, randomgenerator);
+                if (message != null) key = Keygen.Key(message.Length, randomgenerator);
             }
             var encryptor = new Encryptor {Key = key, Message = message, SpaceFlag = spaceflag};
             var result = encryptor.CypherIt();

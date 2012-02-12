@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="PriyomOTPcoder.Encryptor" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAgAwAACAAAQAAAAAAAAAAgAAAIAAAAAA=</HashCode>
+      <FileName>Encryptor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriyomOTPcoder.FileObject" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAQEQAAAAAAAQAAAAAAAAAAAgACAAAAAA=</HashCode>
+      <FileName>FileObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriyomOTPcoder.FileOperations" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAABAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>FileOperations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriyomOTPcoder.Keygen" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>keygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriyomOTPcoder.MainCalls" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAQAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>MainCalls.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriyomOTPcoder.OTPcypher" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAQAYAAIA=</HashCode>
+      <FileName>OTPcypher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriyomOTPcoder.Program" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriyomOTPcoder.RandomGen" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Random.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriyomOTPcoder.Stringstuff" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>stringstuff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriyomOTPcoder.Properties.Settings" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.4" />
+</ClassDiagram>
