@@ -29,6 +29,7 @@ namespace PriyomOTPcoder
         private string CypherWithOutSpace()
         {
             var result = "";
+            Message = Stringstuff.RemoveSpaces(Message);
             for (var i = 0; i < Message.Length; i++)
             {
                 result += OTPcypher.Cypher(Message.Substring(i, 1), Key.Substring(i, 1));
