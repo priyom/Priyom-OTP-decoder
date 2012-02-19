@@ -46,7 +46,7 @@ namespace PriyomOTPcoder
             {
                 keyfilename = "key";
             }
-            Console.WriteLine("Specify message file? (Leave blank if cyoher.txt exists and is correct)");
+            Console.WriteLine("Specify message file? (Leave blank if cypher.txt exists and is correct)");
             var cypherfilename = Console.ReadLine();
             if (cypherfilename == "")
             {
@@ -103,11 +103,26 @@ namespace PriyomOTPcoder
             }
             var encryptor = new Encryptor {Key = key, Message = message, SpaceFlag = spaceflag};
             var result = encryptor.CypherIt();
-            Console.WriteLine(result);
+            var messageFigure = "";
+            var keyFigure = "";
+            if(spaceflag)
+            {
+                messageFigure = Stringstuff.ConvertAlphaWithSpaceToNumber(result);
+                keyFigure = Stringstuff.ConvertAlphaWithSpaceToNumber(key);
+            }
+            else
+            {
+                messageFigure = Stringstuff.ConvertAlphaNoSpaceToNumber(result);
+                keyFigure = Stringstuff.ConvertAlphaNoSpaceToNumber(key);
+            }
+            messageFigure = Stringstuff.ConvertTo5FigGroups(messageFigure);
+            keyFigure = Stringstuff.ConvertTo5FigGroups(keyFigure);
+            Console.WriteLine("CypherText: {0} \r\nKeyText: {1}\r\nCypher5Fig: {2}\r\nKey5Fig: {3}", result, key, messageFigure, keyFigure);   
+
             var messagefile = new FileObject
                                   {
                                       Id = Guid.NewGuid(),
-                                      MessageFigure = "",
+                                      MessageFigure = messageFigure,
                                       MessageText = result,
                                       Name="cypher",
                                       SpaceFlag = spaceflag
@@ -118,7 +133,7 @@ namespace PriyomOTPcoder
                 var keyfile = new FileObject
                                   {
                                       Id = Guid.NewGuid(),
-                                      MessageFigure = "",
+                                      MessageFigure = keyFigure,
                                       MessageText = key,
                                       Name = "key",
                                       SpaceFlag = spaceflag
