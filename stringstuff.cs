@@ -8,11 +8,11 @@ namespace PriyomOTPcoder
     {
         public static bool IsValid(String str)
         {
-            return Regex.IsMatch(str, @"^[a-zA-Z]+$");
+            return Regex.IsMatch(str, @"^[a-z]+$");
         }
         public static bool IsValidWithSpace(String str)
         {
-            return Regex.IsMatch(str, @"^[a-zA-Z ]+$");
+            return Regex.IsMatch(str, @"^[a-z ]+$");
         }
         public static string GenerateRandomNumberCharacter(Random rollTheDice)
         {
