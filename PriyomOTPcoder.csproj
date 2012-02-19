@@ -95,7 +95,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Random.cs" />
     <Compile Include="stringstuff.cs" />
   </ItemGroup>
   <ItemGroup>

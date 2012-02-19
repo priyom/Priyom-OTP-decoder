@@ -30,7 +30,7 @@ namespace PriyomOTPcoder
             Id = new Guid(file[0].Fileline);
             SpaceFlag = Convert.ToBoolean(file[1].Fileline);
             MessageText = file[3].Fileline;
-            //MessageFigure = file[4].Fileline;
+            MessageFigure = file[4].Fileline;
         }
     }
 }

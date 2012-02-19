@@ -96,7 +96,10 @@ namespace PriyomOTPcoder
             }
             else
             {
-                if (message != null) key = Keygen.Key(message.Length, randomgenerator);
+                if (message != null)
+                {
+                    key = spaceflag ? Keygen.Keywithspace(message.Length, randomgenerator) : Keygen.Key(message.Length, randomgenerator);
+                }
             }
             var encryptor = new Encryptor {Key = key, Message = message, SpaceFlag = spaceflag};
             var result = encryptor.CypherIt();
